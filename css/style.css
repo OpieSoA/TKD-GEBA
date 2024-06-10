@@ -1,0 +1,218 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background: url("./images/mainbanner.jpg") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 520px;
+    padding: 6.6rem 0;
+}
+
+br {
+    padding: 20px;
+}
+
+.gero h1 {
+    font-size: 3.5rem;
+    margin: 5px 0 55px 0;
+}
+
+.gero p {
+    font-size: 0.9rem;
+    margin: 155px 0 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: -50px auto;
+    padding: 0 1rem;
+}
+
+nav .logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #691419;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cta-button {
+    background-color: #691419;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover{
+    background-color: #7e383d;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section br {
+    padding: 2rem;
+}
+
+section h1{
+    font-size: 2.4rem;
+}
+
+.image {
+    display: block;
+    margin: 0 auto 1.5rem auto;  /* Separación inferior de 1rem para la imagen */
+    max-width: 100%;  /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+section b{
+    margin: 1rem 0 0 0;  /* Separación superior de 1rem para el texto */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+section p{
+    margin-bottom: 3rem;
+}
+
+section {
+    text-align: center;
+}
+
+.lesson {
+    background: url("./images/2482.jpg");
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 520px;
+    padding: 3rem 12em;
+    margin-left: -195px;
+}
+
+.leson li{
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-left: -50px;
+}
+
+.divider {
+    border: 0;
+    height: 4px;
+    background: #691419;
+    width: 9%;  /* Ajustar el ancho del divisor */
+    margin: 2rem auto;  /* Centrando el divisor */
+}
+
+/* Carrusel */
+
+.gallery {
+    padding: 5rem;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 1350px;
+    margin-left: -130px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 1rem);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+
+footer {
+    background-color: #691419;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}

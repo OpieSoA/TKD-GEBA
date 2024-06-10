@@ -1,0 +1,138 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-color: #444444;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding: 6.6rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: -50px auto;
+    padding: 0 1rem;
+}
+
+nav .logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #691419;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-section {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 150px;
+}
+
+.divider {
+    border: 0;
+    height: 4px;
+    background: #691419;
+    width: 9%;  /* Ajustar el ancho del divisor */
+    margin: 2rem auto;  /* Centrando el divisor */
+}
+
+.information {
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer */
+
+footer {
+    background-color: #691419;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}

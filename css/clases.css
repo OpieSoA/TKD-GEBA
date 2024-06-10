@@ -1,0 +1,153 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background: url("./images/clase.jpg") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding: 6.6rem 0;
+}
+
+br {
+    padding: 20px;
+}
+
+.gero h1 {
+    font-size: 3.5rem;
+    margin: 150px 0 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: -50px auto;
+    padding: 0 1rem;
+}
+
+nav .logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #691419;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 95px 0 0 0;
+}
+
+.divider {
+    border: 0;
+    height: 4px;
+    background: #691419;
+    width: 9%;  /* Ajustar el ancho del divisor */
+    margin: 2rem auto;  /* Centrando el divisor */
+}
+
+.card {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-item {
+    text-align: center;
+}
+
+.card-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.one-item {
+    text-align: center;
+}
+
+.one-item img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.one-item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 140px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #691419;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
